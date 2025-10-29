@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <center>
+        <h2>Student Registration Form</h2>
+
+        <form method="post" action="submit.html">
+            <label>Full Name:</label>
+            <input type="text" name="fullname" placeholder="Enter your full name" required>
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter valid email address" required>
+            <br><br>
+
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" required> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <br><br>
+
+            <label>Course:</label>
+            <select name="course" required>
+                <option value="">Select Course</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="BA">BA</option>
+            </select>
+            <br><br>
+
+            <label>Contact No:</label>
+            <input type="tel" name="contact" placeholder="Enter phone number" required>
+            <br><br>
+
+            <label>Address:</label><br>
+            <textarea name="address" rows="3" cols="30" placeholder="Enter your address" required></textarea>
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </form>
+
+        <p>© 2025 Student Registration Portal</p>
+    </center>
+
+    <h3 align="center">Made By - Shaurya Dabas (2025B01010712)</h3>
+
+</body>
+</html>
