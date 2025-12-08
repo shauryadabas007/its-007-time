@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Box Model</title>
+<style>
+    body {
+        margin: 0;
+        background: #243748;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+
+    .box {
+        position: relative;
+        text-align: center;
+    }
+
+    .margin {
+        background: #ff7043;        
+        padding: 30px;
+        position: relative;
+    }
+
+    .border {
+        background: #009bbd;        
+        padding: 30px;
+        position: relative;
+    }
+
+    .padding {
+        background: #ffd166;        
+        padding: 30px;
+        position: relative;
+    }
+
+    .content {
+        background: #00cfa9;        
+        width: 350px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .label {
+        position: absolute;
+        top: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        pointer-events: none;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h1>CSS Box Model</h1>
+
+    <div class="margin">
+        <div class="label">Margin</div>
+
+        <div class="border">
+            <div class="label">Border</div>
+
+            <div class="padding">
+                <div class="label">Padding</div>
+
+                <div class="content">Content</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
